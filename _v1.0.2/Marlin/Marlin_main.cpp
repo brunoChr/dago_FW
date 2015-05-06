@@ -3643,6 +3643,7 @@ case 404:  //M404 Enter the nominal filament width (3mm, 1.75mm ) N<3.0> or disp
         LCD_ALERTMESSAGEPGM(MSG_FILAMENTCHANGE);
         uint8_t cnt=0;
         //set temp
+        //setTargetHotend(100, tmp_extruder);
         while(digitalRead(X_STOP_PIN)){
           cnt++;
           manage_heater();
